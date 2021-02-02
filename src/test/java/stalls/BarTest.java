@@ -12,7 +12,7 @@ public class BarTest {
 
     @Before
     public void setUp() throws Exception {
-        bar = new Bar("Jacks Drum", "Jack Jarvis", ParkingSpot.B1);
+        bar = new Bar("Jacks Drum", "Jack Jarvis", 9, ParkingSpot.B1);
     }
 
     @Test

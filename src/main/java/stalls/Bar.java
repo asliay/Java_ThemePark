@@ -1,13 +1,12 @@
 package stalls;
 
-import behaviours.IReviewed;
 import behaviours.ISecurity;
 import people.Visitor;
 
-public class Bar extends Stall implements ISecurity, IReviewed {
+public class Bar extends Stall implements ISecurity {
 
-    public Bar(String name, String ownerName, ParkingSpot parkingSpot) {
-        super(name, ownerName, parkingSpot);
+    public Bar(String name, String ownerName, int rating, ParkingSpot parkingSpot) {
+        super(name, ownerName, rating, parkingSpot);
     }
 
     @Override
