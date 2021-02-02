@@ -42,4 +42,10 @@ public class DodgemTest {
         Double specialPrice = dodgems.priceFor(youngVisitor);
         assertEquals(2.25, specialPrice, 0.0);
     }
+
+    @Test
+    public void canIncrementVisitCount() {
+        dodgems.incrementVisitCount();
+        assertEquals(1, dodgems.getVisitCount());
+    }
 }

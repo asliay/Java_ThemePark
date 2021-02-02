@@ -1,5 +1,6 @@
 package people;
 
+import attractions.RollerCoaster;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,5 +28,17 @@ public class VisitorTest {
     @Test
     public void hasMoney() {
         assertEquals(40.0, visitor.getMoney(), 0.1);
+    }
+
+    @Test
+    public void hasEmptyVisitedAttractionsList() {
+        assertEquals(0, visitor.visitedAttractionsCount());
+    }
+
+    @Test
+    public void canAddVisitedAttraction() {
+        RollerCoaster rollerCoaster = new RollerCoaster("Oblivion", 8);
+        visitor.addVisitedAttraction(rollerCoaster);
+        assertEquals(1, visitor.visitedAttractionsCount());
     }
 }
