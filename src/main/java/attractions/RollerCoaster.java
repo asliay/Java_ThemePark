@@ -5,7 +5,7 @@ import behaviours.ISecurity;
 import behaviours.ITicketed;
 import people.Visitor;
 
-public class RollerCoaster  extends Attraction implements ISecurity, ITicketed, IReviewed {
+public class RollerCoaster  extends Attraction implements ISecurity, ITicketed {
 
     public RollerCoaster(String name, int rating) {
         super(name, rating);

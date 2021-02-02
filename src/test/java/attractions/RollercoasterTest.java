@@ -39,8 +39,8 @@ public class RollercoasterTest {
 
     @Test
     public void wontAllowVisitorUnder12() {
-        Visitor youngVisitor = new Visitor(11, 150, 10);
-        assertFalse(rollerCoaster.isAllowedTo(youngVisitor));
+        Visitor child = new Visitor(11, 150, 10);
+        assertFalse(rollerCoaster.isAllowedTo(child));
     }
 
     @Test

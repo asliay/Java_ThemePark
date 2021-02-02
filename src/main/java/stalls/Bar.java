@@ -4,9 +4,9 @@ import behaviours.IReviewed;
 import behaviours.ISecurity;
 import people.Visitor;
 
-public class TobaccoStall extends Stall implements ISecurity, IReviewed {
+public class Bar extends Stall implements ISecurity, IReviewed {
 
-    public TobaccoStall(String name, String ownerName, ParkingSpot parkingSpot) {
+    public Bar(String name, String ownerName, ParkingSpot parkingSpot) {
         super(name, ownerName, parkingSpot);
     }
 
