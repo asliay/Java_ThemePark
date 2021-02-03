@@ -1,5 +1,6 @@
 package attractions;
 
+import behaviours.IReviewed;
 import behaviours.ITicketed;
 import people.Visitor;
 

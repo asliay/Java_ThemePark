@@ -1,6 +1,5 @@
 package stalls;
 
-import behaviours.IReviewed;
 
 public class IceCreamStall extends Stall {
 
@@ -8,8 +7,4 @@ public class IceCreamStall extends Stall {
         super(name, ownerName, rating, parkingSpot);
     }
 
-    @Override
-    public int getRating() {
-        return 0;
-    }
 }
